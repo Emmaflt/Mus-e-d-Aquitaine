@@ -1,0 +1,76 @@
+/*------------------------------------------------- GRILLE EXPOSITION --------------------------------------------------*/
+.container_grid_exposition {
+	margin-top: 250px;
+}
+/*------------------------------------------------- TEXTES --------------------------------------------------*/
+.titres_exposition {
+	grid-column: 12/24;
+	padding-top: 300px;
+}
+.textes_exposition {
+	grid-column: 10/20;
+}
+/*-------------------------------------------------------- IMAGES -------------------------------------------------------*/
+
+.flute{
+	height: 400px;
+	width: auto;
+	position: absolute;
+	right: -50px;
+	top : 350px;
+
+}
+
+.gallo{
+	height: 500px;
+	width: auto;
+	position: absolute;
+	right: -50px;
+	top : 1030px;
+}
+
+.franco{
+	height: 400px;
+	width: auto;
+	position: absolute;
+	right: -50px;
+	top : 1700px;
+}
+
+.pendule{
+	height: 700px;
+	width: auto;
+	position: absolute;
+	right: -200px;
+	top : 2100px;
+}
+
+.montesquieu{
+	height: 400px;
+	width: auto;
+	position: absolute;
+	right: -100px;
+	top : 2875px;
+}
+
+.plancha{
+	height: 460px;
+	width: auto;
+	position: absolute;
+	right: 80px;
+	top : 3425px;
+}
+/*------------------------------------------------------ ANIMATION ROSACE ------------------------------------------------*/
+.flottant {
+	opacity: 40%;
+	width: 550px;
+	height: 45%;
+	position: fixed;
+  	top: 1px;
+  	right: auto;
+
+	transform: translate(-50%, 36%);
+}
+#reload {
+	width:100%;
+}

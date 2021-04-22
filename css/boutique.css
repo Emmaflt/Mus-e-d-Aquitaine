@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body, html 
+{
+	width: 100%;
+    margin: 0px;
+    background-color: transparent;
+}
+
+/*a{
+    text-decoration: none;
+    text-size-adjust: none;
+    color: whitesmoke;
+}*/
+
+.html
+{
+    scroll-behavior: smooth;
+}
+
+.container-grid 
+{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(24, 40px);
+    grid-gap: 10px;
+}
+
+/*.container-navbar 
+{
+    z-index: 1;
+    background-color: blueviolet;
+    grid-column: 1/24;
+    height: 80px;
+    margin: 0px;
+}
+
+/*----------------------------- TEXT -----------------------------*/
+.text-top
+{
+    padding-top: 100px;
+    grid-column: 5/23;
+}
+
+.text-title
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    color: whitesmoke;
+    padding-top: 20px;
+}
+
+.text-subtitle
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    color: whitesmoke;
+    padding: 20px 0px 20px 0px;
+}
+
+.text-commun
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: whitesmoke;
+    padding-bottom: 20px;
+}
+
+/*------------------------------------------------------ BARRE DE NAVIGATION ------------------------------------------------*/
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.logo_musée {
+	position: fixed;
+	vertical-align: middle;
+	margin-left: 10px;
+	height:80px;
+}
+.nav_bar {
+	width: 100%;
+	height:80px;
+    top:0;
+	position: fixed;
+	z-index: 4;
+	background-color: #30323d;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.liste_nav_bar {
+	margin:0; /*décalage vers le bas*/
+	list-style-type:none;
+	position: fixed;
+	left: 140px;
+	background-color: #30323d;
+	z-index: 3;
+ }
+.liste_nav_bar li {
+	margin-left:5px; /*Séparation entre chaque bloc*/
+	float:left; /*pour que l'alignement soit horizontal*/
+ }
+ .liste_nav_bar li a { /*Bouton Normal*/
+ 	padding-top: 25px;
+	float:left;   
+	width:200px;
+	height:55px;
+ 	text-decoration:none;
+ 	text-align:center;
+ 	font-family: 'Montserrat';
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	background-color: #30323d;
+ 	color: white;
+	cursor:pointer;
+	display: block;
+	margin:auto;
+ }
+ .liste_nav_bar li a:hover { /*Bouton Survolé*/
+ 	text-decoration:none;
+ 	text-align:center;
+ 	font-family: 'Montserrat';
+ 	background-color: white;
+ 	color: grey;
+	cursor:pointer;
+	margin:auto;
+ }
+.active {
+	background-color: #D62839;
+  }
+
+/*----------------------------- BUTTON -----------------------------*/
+#lib-btn
+{
+    border: none;
+    background-color:  transparent;
+    padding: 4px 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    display: inline-block;
+    color: whitesmoke;
+}
+/*----------------------------- BOOKSHOP -----------------------------*/
+.btq-bookshop
+{
+    background-color: transparent;
+    height: auto;
+}
+
+#btq-bs
+{
+    display: none;
+}
+
+.btq-cards
+{
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btq-card
+{
+    background-color: whitesmoke;
+    width: 200px;
+    height: 500px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.btq-card h3 
+{
+    font-size: 16px;
+}
+
+.price 
+{
+    color: #D62839;
+    font-size: 18px;
+}
+
+.btq-card-img
+{
+    width: 100%;
+    height: auto;
+}
+
+.btq-card p
+{
+    font-size: 14px;
+    padding: 0px 10px 0px 10px;
+}
+
+.btq-card-txtcontent
+{
+    padding: 0px 6px 0px 6px;
+}
+  
+.btq-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: #D62839;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+
+    bottom: 0px;
+    left: 0px;
+    position:absolute;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+  
+/*----------------------------- GIFT IDEA -----------------------------*/
+.btq-giftidea
+{
+    background-color: transparent;
+    height: auto;
+}
+
+#btq-gi
+{
+    display: none;
+}
+
+.btq-gi-card
+{
+    height: 160px;
+    min-height: 160px;
+    max-height: 160px;
+    margin: 20px 0px 10px 0px;
+    
+    background-position: center;      
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.btq-gi-card-content
+{
+  position: absolute;
+  right: 0;
+  margin: 0px;
+  height: 100%;
+  padding: 0px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btq-gi-card-title
+{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px 10px 0px 10px;
+}
+
+.btq-gi-card-buy
+{
+    text-align: right;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 0px 20px 0px 20px;
+    color: #D62839;
+}
+
+/*----------------------------- PHOTO PRINT -----------------------------*/
+
+.btq-photoprint
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: seagreen;
+    width: 100%;
+    height: auto;
+}
+
+#btq-pp
+{
+    display: none;
+}
+
+.btq-pp-img-show
+{
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+
+    background-position: center;      
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.btq-pp-img
+{
+    width: 100%;
+    height: 100%
+}
+
+.btq-pp-selector
+{
+    background-color: aqua;
+}
+
+.btq-pp-container
+{
+    display: flex;
+    height: 450px;
+}
+
+.btq-pp-container-img-show
+{
+    width: 45%;
+    background-color: #f1f1f1;
+}
+
+.btq-pp-container-selector
+{
+    width: 55%;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+.selector-btn
+{
+    background-color: transparent;
+    color: black;
+    border: 1px solid #D62839;
+    font-size: 16px;
+    margin: 2px 3px;
+    padding: 2px;
+    
+}
+
+.selector-btn > p 
+{
+    margin: 4px;
+}
+
+.selector-img
+{
+    display: none;
+}
+
+#img-1
+{
+    display: block;
+}
+
+/*----------------------------- WHEEL -----------------------------*/
+.container-wheel
+{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #4D5061;
+    top: 0px;
+}
+
+.container-wheel img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100vh;
+    filter: blur(1.8px);
+}
+
+.container-filter
+{
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.219);
+    top: 0px;
+}
+
+/*----------------------------- HR -----------------------------*/
+
+.hr-splitter
+{
+    border-top: 4px solid #D62839;
+    border-radius: 5px;
+    background-color: #D62839;
+}
+
+
+/*----------------------------- ANIMATIONS -----------------------------*/
+.text-subtitle:hover
+{
+    transform: translateX(20px);
+    transition-duration: 0.8s;
+}
+
+.text-subtitle
+{
+    transform: translateX(-15px);
+    transition-duration: 0.4s;
+}
+
+.hr-vertical
+{
+    display: inline;
+    width: 3px; 
+    height: 30px; 
+    border-color: #D62839;
+    color: #D62839;
+    background-color: #D62839;
+    margin-right: 10px;
+    padding-right: 3px;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.text-subtitle:hover .hr-vertical
+{
+    opacity: 1;
+    transition-duration: 0.8s;
+}
+
+.btq-card:hover, .btq-gi-card:hover
+{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.822);
+    transition-duration: 0.8s;
+}
+
+.btq-card, .btq-gi-card
+{
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0);
+    transition-duration: 0.4s;
+}
+
+.btq-card button:hover 
+{
+    background-color: #f81d33;
+    color: whitesmoke;
+    font-size: 20px;
+    transition-duration: 0.4s;
+}
+
+.btq-card button
+{
+    background-color: #D62839;
+    color: rgba(245, 245, 245, 0.671);
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
+
+.btq-gi-card:hover .btq-gi-card-content
+{
+    min-width: 540px;
+    max-width: 540px;
+    transition-duration: 0.4s;
+    background-color: whitesmoke;
+}
+
+.btq-gi-card .btq-gi-card-content
+{
+    min-width: 260px;
+    max-width: 260px;
+    transition-duration: 0.6s;
+    background-color: rgba(207, 207, 207, 0.85);
+}
+
+.btq-pp-container:hover
+{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.822);
+    transition-duration: 0.8s;
+}
+
+.btq-pp-container
+{
+    box-shadow: 0 4px 10px 0 rgba(255, 255, 255, 0);
+    transition-duration: 0.4s;
+}
+
+.selector-btn:hover
+{
+    background-color: #D62839;
+    color: whitesmoke;
+    transition-duration: 0.2s;
+}
+
+.selector-btn
+{
+    background-color: whitesmoke;
+    color: black;
+    transition-duration: 0.2s;
+}
+/*------------------------------------------------------- FOOTER  -------------------------------------------------------*/
+footer {
+    width: 100%;
+    background-color: black;
+}
+.plan_du_site {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.texte_plan_du_site {
+    font-family: Montserrat;
+    font-size: 15px;
+    color:white ;
+    margin-left: 40px;
+    margin-right:40px;
+    text-align:center;
+    text-decoration: none;
+}
+.lemon {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    color:white ;
+    margin-left: 40px;
+    margin-right:40px;
+    text-align:center;
+    padding-bottom:20px;
+}

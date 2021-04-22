@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap%27');
+
+/* Zone de textes bloc blanc */
+
+.visite {
+	margin-top: 300px;
+}
+.contour_bloc {
+  margin-top: 500px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.cases {
+  margin: 90px 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.cases li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cases_ctrl {
+  background: #FFFFFF;
+  border: none;
+  border-bottom: solid 1px #F2F2F2;
+  cursor: pointer;
+  display: block;
+  outline: none;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.cases_ctrl:before {
+  background: #44596B;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 14px;
+}
+
+.cases_ctrl:after {
+  background: #44596B;
+  content: '';
+  height: 2px;
+  margin-right: 37px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 14px;
+}
+
+.cases_ctrl.active:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.cases_ctrl.active h2, .cases_ctrl:focus h2 {
+  position: relative;
+}
+
+.cases_panel {
+  background: #F2F2F2;
+  display: none;
+  overflow: hidden;
+}
+
+.styletarif {
+  background: white;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  width: 50%;
+}
+.titre_visite {
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+.texte_visite {
+	margin: 10px;
+	color: black;
+	font-size: 15px;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Musée d'aquitaine | Site officiel</title>
+		<meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css"> 
+        <link rel="stylesheet" href="css/reset.css"> 
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://kit.fontawesome.com/68b1f887b3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+<!---------------------------------------------- ÉCRAN DE CHARGEMENT -------------------------------------------------->
+    <section id="loading">
+        <video width="100%" height="100%" autoplay loop muted inline>
+            <source src="videos/chargement.mp4" type="video/mp4" />
+        </video> 
+    </section>
+  <!---------------------------------------------- ÉCRAN DE FOND -------------------------------------------------->
+    <div class="video_fond">
+        <video width="100%" height="auto" autoplay loop muted inline>
+            <source src="videos/fond.mp4" type="video/mp4"/>
+        </video> 
+    </div>
+<!------------------------------------------------- NAV BARRE = MENU -------------------------------------------------->
+	<div class="nav_bar">
+			<img class="logo_musée" src="img/musee.png">
+			<ul class="liste_nav_bar">
+				<li><a href="index.html">Accueil</a></li>
+ 				<li><a href="exposition.html">Exposition</a></li>
+ 				<li><a href="visite.html">Visite</a></li>
+ 				<li><a href="boutique.html">Boutique</a></li>
+			</ul>
+	</div>
+<!--------------------------------------------------- TITRE + SOUS-TITRE ----------------------------------------------->
+	<section class="titre">
+		<h1>MUSÉE D'AQUITAINE</h1> 
+		<h2 id="ligne1">Le musée d’aquitaine accueille chaque année des milliers de visiteurs.</h2>
+		<h2 id="ligne2">Découvrez l'Aquitaine de la  préhistoire à nos jours.</h2>
+	</section>
+<!--------------------------------------------- BOUTON OUVERTURE POP-UP COVID-19 --------------------------------------->
+    	
+    <div class="CadreBoutonPopUpCovid">
+    	<button id="btnPopup" class="btnPopup">Informations Covid-19</button>
+    </div>
+<!------------------------------------------------- FENETRE POP UP COVID-19 -------------------------------------------->
+		<div id="fenetre_popup" class="fenetre_popup">
+			<div class="haut_popup">
+				<p class="titre_popup">Informations Coronavirus (Covid-19) :</p> 
+			</div>
+			<div class="popup">
+				<p class="text_popup">- Le port du masque à l'intérieur du musée d'Aquitaine et sur l’ensemble du domaine pour les plus de 11 ans est obligatoire.</p>
+				<p class="text_popup">- Comme dans tout espace ouvert au public, les gestes barrières et la distance physique devront être respectés.</p>
+				<p class="text_popup">- Les espaces du musée sont fléchés pour vous recommander un sens de visite et éviter le croisement des visiteurs.</p>
+			</div>
+		</div>
+<!------------------------------------------------- BARRES LIENS + -------------------------------------------->
+		<div class="barres_liens">
+<!------- EXPOSITION --- GAUCHE ----->
+
+		<div class="bloc">
+			<img src="img/index_statue.png " alt="photo" class="photo1">
+			<div class="textes_barres_liens">
+				<div class="textes_barres_liens_haut">
+					<p class="titres_barres_liens">Exposition</p>
+					<p class="phrase_exposition">Poétique et sensorielle, l’exposition offre une rencontre inédite avec des chefs-d'œuvre de la préhistoire à l'époque contemporaine. </p>
+				</div>
+				<div class="textes_barres_liens_bas_gauche">	
+					<button class="bouton_plus" id="bouton_plus_1"><a style="text-decoration:none; 	color:#ffffff;" href="exposition.html">Découvrir</a></button> <!--BOUTON PLUS/DÉCOUVRIR-->
+				</div>
+			</div>
+
+		</div>
+
+<!------- VISITE ----- DROITE --->
+		<div class="bloc">
+			<div class="textes_barres_liens">
+				<div class="textes_barres_liens_haut">
+					<p class="titres_barres_liens">Visite</p>
+					<p class="phrase_visite">Le musée d'Aquitaine met à votre disposition des audioguides pour vous accompagner dans votre visite. Vous pouvez proposez à vos enfants de faire une visite originale et ludique en autonomie. </p>
+				</div>
+				<div class="textes_barres_liens_bas_droite">				
+					<button class="bouton_plus" id="bouton_plus_2"><a style="text-decoration:none; 	color:#ffffff;" href="visite.html">Découvrir</a></button>
+				</div>
+			</div>
+			<img src="img/index_doré.jpg" alt="photo" class="photo2">
+		</div>
+
+<!------- BOUTIQUE ---- GAUCHE ---->
+		<div class="bloc">
+			<img src="img/index_glace.jpg " alt="photo" class="photo3">
+			<div class="textes_barres_liens">
+				<div class="textes_barres_liens_haut">
+					<p class="titres_barres_liens">Boutique</p>
+					<p class="phrase_boutique">Vous trouverez dans la boutique du musée un large choix d'ouvrages, catalogues d'expositions, affiches, cartes postales et cadeaux pour les grands et les petits.</p>
+				</div>
+				<div class="textes_barres_liens_bas_gauche">	
+					<button class="bouton_plus" id="bouton_plus_3"><a style="text-decoration:none; 	color:#ffffff;" href="boutique.html">Découvrir</a></button>
+				</div>
+			</div>
+
+		</div>
+<!------- FIN 3 LIENS -------->
+		</div>
+<!------------------------------------------------------ CONTACT ------------------------------------------------>
+<section class="contact">
+<!------------------------------------- PARTIE GAUCHE ---------------------------------------->
+	<div class="gauche_texte">
+	<!---------------- PARTIE GAUCHE HAUTE ---------------------->
+  		<div class="gauche_haut_texte">
+			<p class="titre_contact">Retrouvez-nous 20 Cours Pasteur, 33000 Bordeaux.</p>
+			<p class="texte_contact">Itinéraires vers le musée d'Aquitaine à Bordeaux en empruntant les transports en commun :</p>
+			<div class="gauche_haut_bas_texte">
+				<p class="texte_contact">- TRAM : A / B</p>
+				<p class="texte_contact">- BUS : 11 / 16 / 24.</p>
+			</div>
+		</div>
+	<!---------------- PARTIE GAUCHE BASSE ---------------------->
+	<div class="gauche_bas_texte">
+					<!---------- PARTIE GAUCHE BASSE GAUCHE-->
+		<div class="gauche_bas_gauche_texte">
+			<p class="titre_contact">Venez nous voir !</p>
+			<p class="texte_contact">Nous sommes ouverts</p>
+			<p class="texte_contact">du mardi au dimanche, de 11h à 18h,</p>
+			<p class="texte_contact">sauf les jours fériés.</p>
+		</div>
+					<!---------- PARTIE DROITE BASSE DROITE-->
+		<div class="gauche_bas_droite_texte">
+			<p class="titre_contact">Pour nous contacter</p>
+			<p class="texte_contact">Téléphone : 05 56 01 51 00</p>
+		</div>
+	</div>
+</div>
+</div> <!-- fin gauche contact-->
+<!------------------------------------- PARTIE DROITE ---------------------------------------->
+	<div class="droite_carte">
+		<div class="carte"> <!---------------- CARTE GOOGLE MAPS ----------------->
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.312192377925!2d-0.5772323845921236!3d44.835575179098534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5527c5d83ab46f%3A0x6d35932779e19514!2zTXVzw6llIGTCtEFxdWl0YWluZQ!5e0!3m2!1sfr!2sfr!4v1603274957322!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+	</div>
+</div>
+
+</section> <!--fin section contact-->
+<!------------------------------------------------------ RÉSEAUX SOCIAUX ------------------------------------------------>
+<section class="social_menu">
+<!------------------ ICONES RÉSEAUX -->
+	<ul>
+    	<li><a href="https://www.facebook.com/musee.aquitaine/"><i class="fa fa-facebook"></i></a></li>
+    	<li><a href="https://www.twitter.com/MuseeAquitaine"><i class="fa fa-twitter"></i></a></li>
+    	<li><a href="https://www.instagram.com/musee_aquitaine/"><i class="fa fa-instagram"></i></a></li>
+    	<li><a href="https://www.youtube.com/channel/UCNmf4zwWQL7YuFh6iGJi4GA"><i class="fa fa-youtube"></i></a></li>
+  	</ul>
+</section>
+<!------------------------------------------------------ FOOTER ------------------------------------------------>
+<footer>
+<!----------------- PLAN DU SITE ----------------------->
+	<div class="plan_du_site">
+		<a href="index.html" class="texte_plan_du_site">Accueil</a>
+		<a href="exposition.html" class="texte_plan_du_site">Exposition</a>
+		<a href="visite.html" class="texte_plan_du_site">Visite</a>
+		<a href="boutique.html" class="texte_plan_du_site">Boutique</a>
+	</div>
+<!-------------------- LEMON --------------------------->
+	<div class="lemon">
+		<p>Par Lemon<p>
+	</div>
+</footer>
+<!---------------------------------------------------------- SCRIPTS ------------------------------------------------------------->
+    <script src="js/chargement.js"></script>
+    <script src="js/popUp.js"></script> 
+<!---------------------------------------------------------- FIN ------------------------------------------------------------->
+    </body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Musée d'aquitaine - Boutique</title>
+        <link rel="stylesheet" href="css/boutique.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/btq.js"></script>
+    </head>
+    <body>
+        <div class="nav_bar">
+			<img class="logo_musée" src="img/musee.png">
+			<ul class="liste_nav_bar">
+				<li><a href="index.html">Accueil</a></li>
+ 				<li><a href="exposition.html">Exposition</a></li>
+ 				<li><a href="visite.html">Visite</a></li>
+ 				<li><a href="boutique.html">Boutique</a></li>
+			</ul>
+        </div>
+    
+        <div class="container-wheel">
+            <img src="img/rosace.png" class="wheel">
+        </div>
+        <div class="container-filter"></div>
+        <div class="container-grid">
+            <div class="text-top">
+                <h1 class="text-title">Boutique</h1>
+                <p class="text-commun">La boutique du musée propose un large choix d'ouvrages, 
+                    catalogues d'expositions, affiches, cartes postales et 
+                    cadeaux pour les grands et les petits.
+                </p>
+                <!-- <hr class="hr-splitter"> -->
+                <!-- ------------ BOOKSHOP ------------ -->
+                <h2 class="text-subtitle">
+                    <hr class="hr-vertical"><a href="#btq-bs" name="lib-btn" id="lib-btn" 
+                    rel="btq-bs" value="&#11167;" 
+                    onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Librairie</a>
+                 </h2>
+                <!-- ------------ CARDS ------------ -->
+                <div id="btq-bs" class="btq-bookshop">
+                    <div class="btq-cards">
+
+                        <div class="btq-card">
+                            <div class="btq-card-img"><img src="img/btq/lib/1.png" alt="Livre Make pop up"
+                                 style="width:100%"></div>
+                            <div class="btq-card-txtcontent">
+                                <h3>Make-pop-up</h3>
+                                <p class="price">5€</p>
+                                <p> Le livret qui se transforme en pop-up</p>
+                                <p><button>Acheter</button></p>
+                            </div>
+                        </div>
+
+                        <div class="btq-card">
+                            <div class="btq-card-img"><img src="img/btq/lib/2.jpg" alt="Catalogue d'exposition
+                                 1917 Voilà les Américains !" style="width:100%"></div>
+                            <div class="btq-card-txtcontent">         
+                                <h3>1917 Voilà les Américains !</h3>
+                                <p class="price">25€</p>
+                                <p>Catalogue d'exposition</p>
+                                <p><button>Acheter</button></p>
+                            </div>
+                        </div>   
+
+                        <div class="btq-card">
+                            <div class="btq-card-img"><img src="img/btq/lib/3.jpg" alt="De Ouaga à New York,
+                                 nouveaux regards sur Saint-Michel" style="width:100%">
+                            </div>
+                            <div class="btq-card-txtcontent">  
+                                <h3>Vous me voyez ?</h3>
+                                <p class="price">5€</p>
+                                <p>De Ouaga à New York, nouveaux regards sur Saint-Michel</p>
+                                <p><button>Acheter</button></p>
+                            </div>
+                        </div>   
+
+                        <div class="btq-card">
+                            <div class="btq-card-img"><img src="img/btq/lib/4.jpg" alt="De Ouaga à New York,
+                                 nouveaux regards sur Saint-Michel" style="width:100%">
+                            </div>
+                            <div class="btq-card-txtcontent">  
+                                <h3>Champ libre : De la détention à la collection</h3>
+                                <p class="price">5€</p>
+                                <p>Catalogue d'exposition</p>
+                                <p><button>Acheter</button></p>
+                            </div>
+                        </div>  
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- ------------ GIFT IDEA ------------ -->
+                <h2 class="text-subtitle">
+                    <hr class="hr-vertical"><a href="#btq-gi" name="lib-btn" id="lib-btn" 
+                        rel="btq-gi" value="&#11167;" 
+                        onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Idées cadeaux</a>
+
+                </h2>
+
+                <div id="btq-gi" class="btq-giftidea">
+                    <div class="btq-gi-cards">
+
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/1.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Boule de décoration prestige</h3>
+                                <span class="price" style="padding-left: 10px;">5€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>    
+
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/2.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Trousse rayée - La Garonne</h3>
+                                <span class="price" style="padding-left: 10px;">11€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/3.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Miroir</h3>
+                                <span class="price" style="padding-left: 10px;">3,50€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div> 
+
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/4.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Accroche sac</h3>
+                                <span class="price" style="padding-left: 10px;">4,50€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/5.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Bandeau multi fonction</h3>
+                                <span class="price" style="padding-left: 10px;">9,90€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/6.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Besace canvas</h3>
+                                <span class="price" style="padding-left: 10px;">29€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/7.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Bracelet brésilien</h3>
+                                <span class="price" style="padding-left: 10px;">60€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/8.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Bracelet olfactif</h3>
+                                <span class="price" style="padding-left: 10px;">35€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/9.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Chargeur - Batterie 2400mAh</h3>
+                                <span class="price" style="padding-left: 10px;">17€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/10.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Foulard "Les colonies" (De Buzon)</h3>
+                                <span class="price" style="padding-left: 10px;">12,90€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>  
+                        <div class="btq-gi-card" style="background-image: url(img/btq/gi/11.jpg);">
+                            <div class="btq-gi-card-content">
+                                <h3 class="btq-gi-card-title">Jeu de mémos</h3>
+                                <span class="price" style="padding-left: 10px;">18€</span>
+                                <p class="btq-gi-card-buy">Acheter ici</p>
+                            </div>
+                        </div>   
+
+                    </div>
+                </div>
+                
+                <!-- ------------ PHOTO PRINT ------------ -->
+                <h2 class="text-subtitle">
+                    <hr class="hr-vertical"><a href="#btq-pp" name="lib-btn" id="lib-btn" 
+                    rel="btq-pp" value="&#11167;" 
+                    onclick="buttonToggle(this,'&#11167;','&#11165;')" style="text-decoration:none">Tirage photographie <span>de Félix Arnaudin</span></a> 
+                </h2>
+
+                <div id="btq-pp" class="btq-photoprint">
+                    <div class="btq-pp-container">
+                        <div class="btq-pp-container-img-show">
+                            <img src="img/btq/pp/1.jpg" class="btq-pp-img">
+                        </div>
+                        <div class="btq-pp-container-selector">
+                            <h3 class="btq-pp-selector-title">Tirages Félix Arnaudin</h3>
+                            <div class="selector-container">
+                                <button class="selector-btn" onclick="selectImg(this)" value="1"
+                                rel="img-1"><p>Autoportrait</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="2"
+                                rel="img-2"><p>Pêcheurs à l'Aygue-Longue</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="3"
+                                rel="img-3"><p>Eglise de Luglon</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="4"
+                                rel="img-4"><p>Arjuzanx, motte du moulin</p></button>
+                                <button class="selector-btn" onclick="selectImg(this)" value="5"
+                                rel="img-5"><p>Grands pins de Guentes</p></button>
+
+                                <div class="selector-img" id="img-1">
+                                    <h5>Félix Arnaudin, autoportrait vers 1876</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle</p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-2">
+                                    <h5>Pêcheurs à l'Aygue-Longue, 20 mars 1886, Commensacq</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-3">
+                                    <h5>Eglise de Luglon, de la portène 18.05.1900</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-4">
+                                    <h5>Arjuzanx, motte du moulin et tour 21 novembre 1901</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+                                <div class="selector-img" id="img-5">
+                                    <h5>Grands pins de Guentes, 8 octobre 1890</h5>
+                                    <p>Tirage photographique Noir et Blanc d'après les plaques de verre de Felix Arnaudin en format 38x48cm
+                                        Papier Baryté 250gr, tirage qualité Digigraphie fourni avec certificat
+                                        Tirage estampillé, déclaré et numéroté dans la limite de 30 exemplaires par modèle </p>
+                                    <p class="price">100€</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!------------------------------------------------------ FOOTER ------------------------------------------------>
+<footer>
+    
+
+<!----------------- PLAN DU SITE ----------------------->
+    <div class="plan_du_site">
+        <a href="index.html" class="texte_plan_du_site">Accueil</a>
+        <a href="exposition.html" class="texte_plan_du_site">Exposition</a>
+        <a href="visite.html" class="texte_plan_du_site">Visite</a>
+        <a href="boutique.html" class="texte_plan_du_site">Boutique</a>
+    </div>
+<!-------------------- LEMON --------------------------->
+    <div class="lemon">
+        <p>Par Lemon<p>
+    </div>
+</footer>
+    </body>
+</html>

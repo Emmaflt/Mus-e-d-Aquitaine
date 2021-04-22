@@ -1,0 +1,333 @@
+.video_fond {	
+	z-index: -1;
+	position: absolute;
+    width: 100%;
+	height: 80vh;
+	top: 0;
+	left: 0;
+	opacity: 30%;
+}
+/*--------------------------------------------------- POP-UP COVID --------------------------------------------------------*/
+
+/* Bouton Pop Up Style */
+
+.CadreBoutonPopUpCovid {
+	width: 100%;
+	height: 40px;
+	padding-top: 100px;
+	z-index: 2;
+}
+/*-------------------- BOUTON POP-UP ------------------------*/
+.btnPopup{
+	z-index: 2;
+	background:#30323d;
+  	width:200px;
+  	height:40px;
+	line-height:40px;
+  	text-align:center;
+ 	color: white;
+ 	border-radius:10px; /*arrondi du bouton*/
+	border:1px solid white;
+	cursor:pointer;
+	font-weight:bold;
+	display: block;
+	margin:auto;
+}
+.btnPopup:hover{
+ 	background:white;
+	color:#30323d;
+}
+/*-------------------- FENETRE POP-UP ------------------------*/
+.fenetre_popup{
+	position: fixed;
+	top: 0; /*positionner la fenêtre sombre de fond en haut*/
+	background-color: rgba(0,0 ,0 , 0.5); /*couleur de fenêtre mi-transparente*/
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+	display:none;
+	align-items: center;
+	flex-direction: column;
+}
+.haut_popup{
+	margin-top: 200px;
+	display:flex;
+	justify-content: center;
+	width: 70%;
+	padding-top: 10px; /*élargir la boîte rouge du titre vers le haut*/
+	padding-bottom: 10px; /*élargir la boîte rouge du titre vers le haut*/
+	background-color: #d62839; /*red*/
+	border-radius: 5px 5px 0px 0px; /*arrondi des bords*/
+
+}
+.popup{
+	align-content: center;
+	width: 70%;
+	background-color: white;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 0px 0px 5px 5px; /*arrondi des bords*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.btnClose {
+	text-align: center;
+	float: right;
+	font-size:16pt;
+	cursor: pointer;
+	color: rgb(26, 26, 26);
+}
+/*textes et titres popup*/
+.titre_popup {
+	font-family: Montserrat;
+	font-size:20pt;
+	color: white;
+}
+.text_popup {
+	font-family: Montserrat;
+	font-size:16pt;
+	color: grey;
+}
+
+/*------------------------------------------------------- BARRES LIENS +  -------------------------------------------------------*/
+
+.barres_liens {
+display:flex;
+flex-direction:column;
+margin-top: 190px;
+}
+.bloc {
+	border-radius: 10px 10px 10px 10px;
+	margin-top: 100px;
+	color: #FFFFFF; /*couleur texte*/
+	background-color: #17171ade; /*couleur fond*/
+	height: auto;
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+}
+.bouton_plus {
+	border-radius: 10px; /*arrondi bouton plus*/
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-weight: bold;
+	color:#ffffff;
+	background-color: #17171ade;
+	border: rgb(255, 255, 255);
+	align-self: right;
+	align-self: flex-end;
+	margin-top: 50px;
+	border-radius:50px; /*arrondi du bouton*/
+	border:2px solid white;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+}
+.bouton_plus:hover{
+	color:#17171ade;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.titres_barres_liens {
+	font-size: medium;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.textes_barres_liens {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.textes_barres_liens_bas_droite {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.textes_barres_liens_bas_gauche {
+	display: flex;
+	justify-content: flex-end;
+}
+/*------- EXPOSITION / BLOC 1 --------*/
+
+.placement-premiere-phrase {
+	margin-top: 45px;
+	position: absolute;
+	display:inline ;
+	text-align: center;
+}
+.photo1 {
+	width: 33%;
+	border-radius: 10px 0px 0px 10px;
+	transition: 0.2s;
+    font-size:25px ;
+}
+.photo1:hover {
+    transform: scale(1.2);
+}
+/*------- VISITE / BLOC 2 --------*/
+
+.placement-deuxieme-phrase {
+	margin-top: 45px;
+	position: relative;
+	display:inline ;
+	text-align: left;
+}
+.photo2 {
+	width: 33%;
+	border-radius: 0px 10px 10px 0px;
+	text-align: right;
+	transition: 0.2s;
+    font-size:25px ;
+}
+.photo2:hover {
+    transform: scale(1.2);
+}
+/*------- BOUTIQUE / BLOC 3 --------*/
+
+.placement-troisième-phrase {
+	margin-top: 45px;
+	position: absolute;
+	display:inline ;
+	text-align: center;
+}
+.photo3 {
+	width: 33%;
+	border-radius: 10px 0px 0px 10px;
+	transition: 0.2s;
+    font-size:25px ;
+}
+.photo3:hover {
+    transform: scale(1.2);
+}
+/*------- BOUTIQUE / BLOC 3 --------*/
+
+
+/*------------------------------------------------------- CONTACT -------------------------------------------------------*/
+
+/*---------------- DIVISIONS -------------------*/
+
+.contact {
+	margin-top: 220px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.582);
+	display: flex;
+	flex-direction: row;
+}
+/*------- GAUCHE --------*/
+.gauche_texte {
+	display: flex;
+	flex-direction: column;
+	padding-top: 30px;
+	width: 50%;
+}
+/*---- HAUT -----*/
+.gauche_haut_texte {
+	margin-bottom: 20px;
+}
+.gauche_haut_bas_texte {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+/*---- BAS -----*/
+.gauche_bas_texte {
+	margin-top:50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.gauche_bas_gauche_texte {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left: 5%;
+}
+.gauche_bas_droite_texte {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-right: 5%;
+}
+/*------- DROITE --------*/
+.droite_carte {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+/*---------------- TEXTES + CARTE -------------------*/
+.titre_contact {
+	font-size: 27px;
+	color:white ;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	text-align:center;
+}
+.texte_contact {
+	font-size: 15px;
+	color:white ;
+	margin-left: 40px;
+	margin-right:40px;
+	text-align:center;
+}
+.carte {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+/*------------------------------------------------------ RÉSEAUX SOCIAUX -----------------------------------------------*/
+.social_menu {
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+	background-color: grey;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+.social_menu ul {
+    display: flex;
+    align-self: center;
+}
+.social_menu ul li {
+    list-style: none; /*enlève les puces*/
+    margin: 0 10px; /*séparation horizontale entre les boutons*/
+}
+.social_menu ul li .fa {
+    color: #000000; /*couleur des icônes*/
+    font-size: 25px; /*taille des icônes*/
+    line-height: 50px;
+    transition: .5s;
+}
+.social_menu ul li .fa:hover {
+    color: #ffffff; /*couleur des icônes lorsqu'elles sont survolées*/
+}
+.social_menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px; /*largeur des rectangles*/
+    height: 50px; /*hauteur des rectangles*/
+    border-radius: 50% ; /*rondeur des angles*/
+    background-color: white; /*couleur des rectangles*/
+    text-align: center;
+    transition: 0.5s; /*temps de la transition/animation*/
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); /*ombre des cercles*/
+}
+.social_menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px); /*animation quand les rectangles sont survolés*/
+}
+.social_menu ul li:nth-child(1) a:hover { /*couleur transition facebook*/
+    background-color: #3b5999;
+}
+.social_menu ul li:nth-child(2) a:hover { /*couleur transition twitter*/
+    background-color: #55acee;
+}
+.social_menu ul li:nth-child(3) a:hover { /*couleur transition instagram*/
+    background-color: #e4405f;
+}
+.social_menu ul li:nth-child(4) a:hover { /*couleur transition youtube*/
+    background-color: #cd201f;
+}

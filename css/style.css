@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+
+/*------------------------------------------------------- GÉNÉRAL -------------------------------------------------------*/
+
+body, html 
+{
+	width: 100%;
+	margin: 0px;
+}
+
+body {
+	background-color:  #30323d;
+}
+/*------------------------------------------------- GRILLE --------------------------------------------------*/
+
+.container_grid {
+	position: absolute;
+	display:grid;
+	grid-template-columns: repeat(24, 40px);
+	grid-gap:10px;
+ }
+/*------------------------------------------------------- TEXTES -------------------------------------------------------*/
+
+a { 
+	color: #219ebc; 
+} /* CSS link color */
+
+p {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+h3 {
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+/*------------------------------------------------------- CHARGEMENT -------------------------------------------------------*/
+#loading{
+	position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 111;
+    top:0;
+    left: 0;
+}
+/*------------------------------------------------------ BARRE DE NAVIGATION ------------------------------------------------*/
+
+.nav_bar {
+	width: 100%;
+	height:80px;
+	position: fixed;
+	top:0;
+	z-index: 4;
+	background-color: #30323d;
+	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+}
+.logo_musée {
+	position: fixed;
+	vertical-align: middle;
+	margin-left: 10px;
+	height:80px;
+}
+.liste_nav_bar  {
+	margin:0; /*décalage vers le bas*/
+	list-style-type:none;
+	position: fixed;
+	left: 140px;
+	background-color: #30323d;
+	z-index: 3;
+ }
+ .liste_nav_bar li {
+	margin-left:5px; /*Séparation entre chaque bloc*/
+	float:left; /*pour que l'alignement soit horizontal*/
+ }
+.liste_nav_bar li a { /*Bouton Normal*/
+ 	padding-top: 25px;
+	float:left;   
+	width:200px;
+	height:55px;
+ 	text-decoration:none;
+ 	text-align:center;
+ 	font-family: 'Montserrat';
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	background-color: #30323d;
+ 	color: white;
+	cursor:pointer;
+	display: block;
+	margin:auto;
+ }
+.liste_nav_bar li a:hover { /*Bouton Survolé*/
+ 	text-decoration:none;
+ 	text-align:center;
+ 	font-family: 'Montserrat';
+ 	background-color: white;
+ 	color: grey;
+	cursor:pointer;
+	margin:auto;
+ }
+.active {
+	background-color: #D62839;
+  }
+/*----------------------------------------------------------- TITRE ----------------------------------------------------------*/
+
+.titre  {  
+	margin-top:300px;
+	width: 100%;
+	z-index: 2;
+}
+
+h1 {				 /*TITRE MUSÉE D'AQUITAINE*/
+	color: #FFFFFF;
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-size: 75px;
+	z-index: 0;
+	text-align: center; /*centrer le texte par rapport à la page*/
+	z-index: 2;
+
+}
+
+h2 {				/*SOUS-TITRE PRÉSENTATION*/
+	margin-top:200px;
+	color: #FFFFFF;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;	
+	text-align: center; /*centrer le texte par rapport à la page*/
+	z-index: 2;
+ }		     
+ #ligne2 {
+		padding-top:0;
+}
+.presentation { 
+	position: relative;
+}
+/*------------------------------------------------------- FOOTER  -------------------------------------------------------*/
+footer {
+    width: 100%;
+    background-color: black;
+}
+.plan_du_site {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.texte_plan_du_site {
+    font-family: Montserrat;
+    font-size: 15px;
+    color:white ;
+    margin-left: 40px;
+    margin-right:40px;
+    text-align:center;
+    text-decoration: none;
+}
+.lemon {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    color:white ;
+    margin-left: 40px;
+    margin-right:40px;
+    text-align:center;
+    padding-bottom:20px;
+}
